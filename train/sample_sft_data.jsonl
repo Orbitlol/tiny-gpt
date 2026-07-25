@@ -1,0 +1,4 @@
+{"instruction": "What is this document collection mostly about?", "response": "It covers the topics found in the source notes, explained in plain language."}
+{"instruction": "Give a one-sentence summary of the main idea.", "response": "The main idea is explained clearly and briefly here."}
+{"instruction": "Return a JSON object with keys title and summary about photosynthesis.", "response": "{\"title\": \"Photosynthesis\", \"summary\": \"Plants convert sunlight into chemical energy.\"}"}
+{"instruction": "List two key points from the notes as JSON with key points.", "response": "{\"points\": [\"first key point\", \"second key point\"]}"}
