@@ -1,4 +1,10 @@
-{"instruction": "What is this document collection mostly about?", "response": "It covers the topics found in the source notes, explained in plain language."}
-{"instruction": "Give a one-sentence summary of the main idea.", "response": "The main idea is explained clearly and briefly here."}
-{"instruction": "Return a JSON object with keys title and summary about photosynthesis.", "response": "{\"title\": \"Photosynthesis\", \"summary\": \"Plants convert sunlight into chemical energy.\"}"}
-{"instruction": "List two key points from the notes as JSON with key points.", "response": "{\"points\": [\"first key point\", \"second key point\"]}"}
+{"instruction": "What is machine learning?", "response": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed."}
+{"instruction": "Explain supervised learning.", "response": "Supervised learning involves training a model on labeled data where the model learns to map input features to output labels."}
+{"instruction": "What are neural networks?", "response": "Neural networks are machine learning models consisting of interconnected nodes organized in layers, inspired by biological neural systems."}
+{"instruction": "How do transformers work?", "response": "Transformers use self-attention mechanisms to process sequential data in parallel, allowing them to capture long-range dependencies efficiently."}
+{"instruction": "What is tokenization in NLP?", "response": "Tokenization is the process of breaking text into smaller units like words or subwords, which is typically the first step in NLP pipelines."}
+{"instruction": "Explain gradient descent.", "response": "Gradient descent is an optimization algorithm that updates model parameters in the direction that reduces the loss function."}
+{"instruction": "What is overfitting?", "response": "Overfitting occurs when a model learns to fit the training data too closely, including its noise, and fails to generalize to new data."}
+{"instruction": "How does dropout prevent overfitting?", "response": "Dropout randomly deactivates neurons during training, forcing the network to learn redundant representations and preventing co-adaptation."}
+{"instruction": "What is the difference between accuracy and precision?", "response": "Accuracy measures overall correctness, while precision measures the fraction of positive predictions that are actually correct."}
+{"instruction": "Explain data augmentation.", "response": "Data augmentation artificially increases training data size by applying transformations like rotation, scaling, or cropping to existing examples."}
