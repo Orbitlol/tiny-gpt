@@ -3,20 +3,20 @@ model:
   n_layer: 4
   n_head: 4
   n_embd: 256
-  block_size: 64
+  block_size: 128  # Increased slightly for better sentence coherence
   dropout: 0.1
   bias: false
 
 pretrain:
   batch_size: 4
   grad_accum_steps: 2
-  max_iters: 300
-  eval_interval: 50
-  eval_iters: 5
-  learning_rate: 3.0e-4
+  max_iters: 3000   # Bumped up from 300 so it actually learns grammar
+  eval_interval: 100
+  eval_iters: 10
+  learning_rate: 3.1e-4
   min_lr: 3.0e-5
-  warmup_iters: 30
-  lr_decay_iters: 300
+  warmup_iters: 100
+  lr_decay_iters: 3000 # Matched to max_iters
   weight_decay: 0.1
   grad_clip: 1.0
   beta1: 0.9
@@ -25,8 +25,8 @@ pretrain:
 sft:
   batch_size: 2
   grad_accum_steps: 2
-  max_iters: 100
-  eval_interval: 25
+  max_iters: 1000   # Lowered slightly since dataset is simple
+  eval_interval: 50
   weight_decay: 0.05
   grad_clip: 1.0
   learning_rate: 5.0e-5
