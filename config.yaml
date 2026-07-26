@@ -10,13 +10,13 @@ model:
 pretrain:
   batch_size: 4
   grad_accum_steps: 2
-  max_iters: 3000   # Bumped up from 300 so it actually learns grammar
+  max_iters: 2000   # Bumped up from 300 so it actually learns grammar
   eval_interval: 100
   eval_iters: 10
   learning_rate: 3.1e-4
   min_lr: 3.0e-5
   warmup_iters: 100
-  lr_decay_iters: 3000 # Matched to max_iters
+  lr_decay_iters: 2000 # Matched to max_iters
   weight_decay: 0.1
   grad_clip: 1.0
   beta1: 0.9
